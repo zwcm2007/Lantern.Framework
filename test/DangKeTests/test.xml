@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Request xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <System>HIS</System>
+  <SecurityCode>HIS5</SecurityCode>
+  <PatientInfo>
+    <PatientNo>1234</PatientNo>
+    <PatientName>测试</PatientName>
+    <Phoneticize />
+    <Sex>1</Sex>
+    <Birth />
+    <BirthPlace />
+    <Country />
+    <Nation />
+    <IDNumber />
+    <SecurityNo />
+    <Workunits />
+    <Address />
+    <ZIPCode />
+    <Phone />
+    <ContactPerson />
+    <ContactShip />
+    <ContactPersonAdd />
+    <ContactPersonPhone />
+    <OperationCode />
+    <OperationName />
+    <OperationTime />
+    <CardNo />
+    <ChangeType />
+  </PatientInfo>
+</Request>

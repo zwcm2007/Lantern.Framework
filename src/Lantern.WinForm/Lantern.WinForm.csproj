@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <Platforms>AnyCPU</Platforms>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Version>1.0.40</Version>
+    <PackageVersion>1.0.40</PackageVersion>
+    <Authors>冯珏庆</Authors>
+    <Copyright>浙江档科信息技术有限公司</Copyright>
+    <Description>提供窗体常用的控件和组件</Description>
+	<UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Common\GetLicenseDialog.cs" />
+    <Compile Remove="Common\GetLicenseDialog.Designer.cs" />
+    <Compile Remove="Common\RegDialog.cs" />
+    <Compile Remove="Common\RegDialog.Designer.cs" />
+    <Compile Remove="Common\SetLicenseDialog.cs" />
+    <Compile Remove="Common\SetLicenseDialog.Designer.cs" />
+    <Compile Remove="Common\WaitCursor.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Common\GetLicenseDialog.resx" />
+    <EmbeddedResource Remove="Common\RegDialog.resx" />
+    <EmbeddedResource Remove="Common\SetLicenseDialog.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lantern\Lantern.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resource1.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resource1.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

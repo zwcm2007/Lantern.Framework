@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net461</TargetFramework>
+    <Platforms>x86</Platforms>
+    <UseWindowsForms>true</UseWindowsForms>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DangKe.DotNetBarLib" Version="1.0.2" />
+    <PackageReference Include="DangKe.ImageProcessing.WinForm" Version="1.0.45" />
+    <PackageReference Include="DangKe.Utils" Version="1.0.7" />
+    <PackageReference Include="DangKe.WinForm" Version="1.0.34" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="DangKe.WinForm.DotNetBar">
+      <HintPath>..\..\src\DangKe.WinForm.DotNetBar\obj\x86\Debug\net461\DangKe.WinForm.DotNetBar.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="UC\ComboRequiredFieldValidator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="UC\ValidatorUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UC\ValidatorUC2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="C:\Users\18048\.nuget\packages\dangke.imageprocessing.configuration\1.0.8\contentFiles\any\net461\Properties\Assets\setting.db">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

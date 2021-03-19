@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	
+	<Import Project="..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFrameworks>net5.0</TargetFrameworks>
+		<AssemblyName>Lantern</AssemblyName>
+		<PackageId>Lantern</PackageId>
+		<Description></Description>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="Application\**" />
+		<Compile Remove="Utils\**" />
+		<Compile Remove="Windows\**" />
+		<EmbeddedResource Remove="Application\**" />
+		<EmbeddedResource Remove="Utils\**" />
+		<EmbeddedResource Remove="Windows\**" />
+		<None Remove="Windows\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Remove="AppService\PageCondition.cs" />
+		<Compile Remove="AppService\SortCondition.cs" />
+		<Compile Remove="AppService\VMBase.cs" />
+		<Compile Remove="AppService\VMMappingBase.cs" />
+		<Compile Remove="AppService\WebApiResult.cs" />
+		<Compile Remove="AppService\WebApiResultType.cs" />
+		<Compile Remove="Extensions\ParamterCheckExtensions.cs" />
+		<Compile Remove="Threading\AsyncOneTimeRunner.cs" />
+		<Compile Remove="Threading\InternalAsyncHelper.cs" />
+		<Compile Remove="Threading\OneTimeRunner.cs" />
+		<Compile Remove="Threading\SemaphoreSlimExtensions.cs" />
+		<Compile Remove="Threading\TaskCache.cs" />
+		<Compile Remove="Web\DakHttpClient.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Properties\PublishProfiles\" />
+		<Folder Include="IO\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="JetBrains.Annotations" Version="2020.3.0" />
+		<PackageReference Include="Nito.AsyncEx" Version="5.1.0" />
+		<PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
+	</ItemGroup>
+</Project>

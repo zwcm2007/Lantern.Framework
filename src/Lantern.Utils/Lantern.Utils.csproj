@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net5.0</TargetFrameworks>
+    <Platforms>AnyCPU</Platforms>
+    <Version>1.0.0</Version>
+    <PackageVersion>1.0.0</PackageVersion>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Authors>Lantern Tech Team</Authors>
+    <Copyright>浙江档科信息技术有限公司</Copyright>
+    <Description>提供各种辅助工具</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Reg\**" />
+    <EmbeddedResource Remove="Reg\**" />
+    <None Remove="Reg\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="DynamicJson.cs" />
+    <Compile Remove="MessageHelper.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentFTP" Version="32.4.5" />
+    <PackageReference Include="log4net" Version="2.0.10" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lantern\Lantern.csproj" />
+  </ItemGroup>
+  
+</Project>

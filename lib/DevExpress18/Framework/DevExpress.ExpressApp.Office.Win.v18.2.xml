@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <assembly>
+    <name>DevExpress.ExpressApp.Office.Win.v18.2</name>
+  </assembly>
+  <members>
+    <member name="N:DevExpress.ExpressApp.Office.Win">
+      <summary>
+        <para>Contains types providing the Rich Text Editor support in the Office Module.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Office.Win.DefaultMenuManagerType">
+      <summary>
+        <para>Contains values specifying the menu type used by the RichText Property Editor.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.ExpressApp.Office.Win.DefaultMenuManagerType.Bars">
+      <summary>
+        <para>The editor uses the bars menu.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.ExpressApp.Office.Win.DefaultMenuManagerType.Default">
+      <summary>
+        <para>The menu type is selected based on the <see cref="P:DevExpress.ExpressApp.Win.SystemModule.IModelOptionsWin.FormStyle"/> value.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.ExpressApp.Office.Win.DefaultMenuManagerType.None">
+      <summary>
+        <para>The editor does not use a menu.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Office.Win.DocumentStorageFormat">
+      <summary>
+        <para>Contains values specifying the document storage format used by the RichText Property Editor.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.ExpressApp.Office.Win.DocumentStorageFormat.Html">
+      <summary>
+        <para>The document is stored in the HTML format.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.ExpressApp.Office.Win.DocumentStorageFormat.Rtf">
+      <summary>
+        <para>The document is stored in the RTF format.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Office.Win.IModelRichTextColumn">
+      <summary>
+        <para>Extends the <see cref="T:DevExpress.ExpressApp.Model.IModelColumn"/> node with properties specifying the RichEdit editor behavior in List Views.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Office.Win.IModelRichTextColumn.CustomHeight">
+      <summary>
+        <para>Specifies the RichEdit cell height, in pixels.</para>
+      </summary>
+      <value>An integer value that specifies the editor height, in pixels.</value>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Office.Win.IModelRichTextFormatSettings">
+      <summary>
+        <para>Extends the <see cref="T:DevExpress.ExpressApp.Model.IModelMember"/> node with properties specifying the RichEdit document storage format.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Office.Win.IModelRichTextFormatSettings.DocumentStorageFormat">
+      <summary>
+        <para>Specifies the document storage format used by the RichText Property Editor.</para>
+      </summary>
+      <value>An enumeration value specifying the document storage format used by the RichText Property Editor.</value>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Office.Win.IModelRichTextPropertyEditorSettings">
+      <summary>
+        <para>Extends the <see cref="T:DevExpress.ExpressApp.Model.IModelPropertyEditor"/> node with properties specifying the RichEdit editor menu behavior.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Office.Win.IModelRichTextPropertyEditorSettings.MenuManagerType">
+      <summary>
+        <para>Specifies the menu type used by the RichText Property Editor.</para>
+      </summary>
+      <value>An enumeration value specifying the menu type used by the RichText Property Editor.</value>
+    </member>
+  </members>
+</doc>
