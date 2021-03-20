@@ -1,13 +1,14 @@
-<Project>	
-  <PropertyGroup>
-	<Platforms>AnyCPU</Platforms>
-	<Version>1.0.2</Version>
-	<PackageVersion>1.0.2</PackageVersion>
-	<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-	<Authors>Lantern Tech Team</Authors>
-	<Copyright></Copyright>
-	<RepositoryType>git</RepositoryType>
-	<RepositoryUrl>https://github.com/abpframework/abp/</RepositoryUrl>
-	<GenerateDocumentationFile>true</GenerateDocumentationFile>
-  </PropertyGroup>
+<Project>
+	<PropertyGroup>
+		<Platforms>AnyCPU</Platforms>
+		<Version>1.0.2</Version>
+		<PackageVersion>1.0.2</PackageVersion>
+		<NoWarn>$(NoWarn);CS1591;CS0436</NoWarn>
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+		<Authors>Lantern Tech Team</Authors>
+		<Copyright></Copyright>
+		<RepositoryType>git</RepositoryType>
+		<RepositoryUrl>https://github.com/abpframework/abp/</RepositoryUrl>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+	</PropertyGroup>
 </Project>
