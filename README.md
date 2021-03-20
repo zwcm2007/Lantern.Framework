@@ -1,5 +1,6 @@
 # Lantern.Framework
-a framework based .net 5 for application
+A framework based .net 5 for building any cross-platform application
 
-why named Lantern?
-That's because it's created in the Lantern Festival, 2021
+so why named Lantern?
+
+That's because it's created in the Lantern Festival, 2021 by author
