@@ -1,13 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
+ <Import Project="..\..\common.props" />
+
+ <PropertyGroup>
     <TargetFramework>net5.0-windows</TargetFramework>
-    <Platforms>AnyCPU</Platforms>
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-    <Version>1.0.40</Version>
-    <PackageVersion>1.0.40</PackageVersion>
-    <Authors>冯珏庆</Authors>
-    <Copyright>浙江档科信息技术有限公司</Copyright>
     <Description>提供窗体常用的控件和组件</Description>
 	<UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
