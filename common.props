@@ -1,14 +1,22 @@
 <Project>
 	<PropertyGroup>
 		<Platforms>AnyCPU</Platforms>
-		<Version>1.0.3</Version>
-		<PackageVersion>1.0.3</PackageVersion>
+		<Version>1.0.4</Version>
+		<PackageVersion>1.0.4</PackageVersion>
+		<PackageIconUrl>https://www.easyicon.net/download/png/1224376/32/</PackageIconUrl>
 		<NoWarn>$(NoWarn);CS1591;CS0436;CS1573</NoWarn>
 		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-		<Authors>Lantern Tech Team</Authors>
+		<Authors>Lantern Team</Authors>
 		<Copyright></Copyright>
 		<RepositoryType>git</RepositoryType>
 		<RepositoryUrl>https://github.com/zwcm2007/Lantern.Framework</RepositoryUrl>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.0-beta-20204-02">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
 </Project>
